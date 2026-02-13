@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ffmpeg:*)",
+      "Bash(python -c \"import os; key = os.environ.get\\(''ELEVENLABS_API_KEY'', ''''\\); dotenv = ''''; exec\\(''try:\\\\n with open\\(r\"\"C:\\\\project\\\\fw-ep-2-main\\\\.env\"\"\\) as f: dotenv = f.read\\(\\)\\\\nexcept: pass''\\); has_key = bool\\(key\\) or ''ELEVENLABS_API_KEY'' in dotenv; print\\(''API키 존재'' if has_key else ''API키 없음''\\)\")",
+      "Bash(python:*)",
+      "Bash(pip show:*)",
+      "Bash(pip install:*)",
+      "Bash(npx create-video@latest:*)",
+      "Bash(npm init:*)",
+      "Bash(npm install:*)",
+      "Bash(npx skills:*)",
+      "Bash(npx remotion:*)",
+      "Bash(start:*)",
+      "Bash(timeout:*)",
+      "Bash(git --version:*)",
+      "Bash(winget install:*)",
+      "Bash(\"C:/Program Files/GitHub CLI/gh.exe\" auth status)",
+      "Bash(git init:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}
