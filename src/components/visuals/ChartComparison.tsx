@@ -87,7 +87,7 @@ export const ChartComparison: React.FC<ChartComparisonProps> = ({
           <div
             style={{
               fontFamily,
-              fontSize: 28,
+              fontSize: 36,
               fontWeight: 700,
               color: visualData.left.color,
               minWidth: 120,
@@ -121,7 +121,7 @@ export const ChartComparison: React.FC<ChartComparisonProps> = ({
               <span
                 style={{
                   fontFamily,
-                  fontSize: 22,
+                  fontSize: 28,
                   fontWeight: 700,
                   color: "#fff",
                 }}
@@ -136,7 +136,7 @@ export const ChartComparison: React.FC<ChartComparisonProps> = ({
         <div
           style={{
             fontFamily,
-            fontSize: 64,
+            fontSize: 80,
             fontWeight: 800,
             color: "rgba(255,255,255,0.9)",
             transform: `scale(${vsScale})`,
@@ -151,7 +151,7 @@ export const ChartComparison: React.FC<ChartComparisonProps> = ({
           <div
             style={{
               fontFamily,
-              fontSize: 28,
+              fontSize: 36,
               fontWeight: 700,
               color: visualData.right.color,
               minWidth: 120,
@@ -184,7 +184,7 @@ export const ChartComparison: React.FC<ChartComparisonProps> = ({
               <span
                 style={{
                   fontFamily,
-                  fontSize: 22,
+                  fontSize: 28,
                   fontWeight: 700,
                   color: "#fff",
                 }}

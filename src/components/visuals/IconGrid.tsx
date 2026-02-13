@@ -64,11 +64,11 @@ export const IconGrid: React.FC<IconGridProps> = ({ visualData, accentColor }) =
               gap: 14,
             }}
           >
-            <div style={{ fontSize: 52 }}>{item.icon}</div>
+            <div style={{ fontSize: 64 }}>{item.icon}</div>
             <div
               style={{
                 fontFamily,
-                fontSize: 34,
+                fontSize: 42,
                 fontWeight: 600,
                 color: "rgba(255,255,255,0.9)",
                 textAlign: "center",

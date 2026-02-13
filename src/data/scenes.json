@@ -5,130 +5,173 @@
     {
       "id": 1,
       "type": "intro",
-      "title": "가위 바위 보, 포커, 투자\n그리고 의사결정의 레벨",
-      "subtitle": "",
-      "narration": "오늘은 가위 바위 보, 포커, 투자, 그리고 의사결정의 레벨에 대해 이야기해보겠습니다.",
+      "title": "가위 바위 보에서 투자까지,\n사고의 Level 차이",
+      "subtitle": "당신이 지는 이유는 실력이 아니다",
+      "narration": "오늘은 가위바위보에서 투자까지, 사고의 레벨 차이에 따른 생존전략에 대해 알려드리겠습니다.",
       "keywords": [],
       "visual": "none",
       "transition": "fadeIn",
       "backgroundColor": "#0f172a",
       "accentColor": "#3b82f6",
-      "audioDuration": 5.9
+      "audioDuration": 7.42
     },
     {
       "id": 2,
       "type": "content",
       "title": "",
-      "narration": "가위 바위 보를 잘하는 방법이 있을까요? 대부분의 사람들은 가위 바위 보를 운의 게임이라고 생각합니다. 하지만 실제로는 사고의 수준에 따라 승률이 꽤 크게 갈립니다.",
+      "narration": "가위바위보를 잘하는 방법이 있을까요? 대부분의 사람들은 가위바위보를 운의 게임이라고 생각합니다. 하지만 실제로는 사고의 수준에 따라 승률이 꽤 크게 갈립니다.",
       "keywords": [],
       "visual": "question",
       "visualData": {
         "question": "가위 바위 보를 잘하는\n방법이 있을까?",
         "icon": "?",
         "subLabel": "운의 게임?",
-        "crossDelaySec": 3
+        "crossDelaySec": 2.5
       },
       "transition": "slideUp",
       "backgroundColor": "#1e293b",
       "accentColor": "#60a5fa",
-      "audioDuration": 12.17
+      "audioDuration": 11.28
     },
     {
       "id": 3,
       "type": "content",
-      "title": "가위 바위 보의 세 가지 사고 레벨",
-      "narration": "레벨 일의 사고는 상대의 선택을 하나로 단정짓고 감으로 답을 냅니다. 레벨 이의 사고는 가능한 선택지의 범위를 설정하고 기대값이 높은 답을 고릅니다. 레벨 삼의 사고는 상대의 사고 과정 자체를 읽고, 그 위에서 게임을 설계합니다. 읽기 위의 읽기가 끝없이 쌓이는 영역입니다.",
+      "title": "Level 1의 사고",
+      "narration": "레벨 일의 사고입니다. 상대는 주먹을 좋아하는 사람이니까, 나는 보자기를 내면 이긴다. 상대의 선택을 하나로 단정짓고, 그에 맞는 답을 냅니다. 맞으면 이기고, 틀리면 집니다. 근거는 감입니다.",
       "keywords": [],
-      "visual": "hierarchy",
+      "visual": "text-focus",
       "visualData": {
-        "levels": [
-          {
-            "label": "Level 1",
-            "description": "감으로 하나를 단정",
-            "color": "#34d399"
-          },
-          {
-            "label": "Level 2",
-            "description": "선택지 범위 설정 + 기대값 계산",
-            "color": "#60a5fa"
-          },
-          {
-            "label": "Level 3",
-            "description": "상대의 사고를 읽고 게임 설계",
-            "color": "#f59e0b"
-          }
-        ],
-        "blinkTimings": [
-          {
-            "startSec": 2,
-            "endSec": 7
-          },
-          {
-            "startSec": 7,
-            "endSec": 13
-          },
-          {
-            "startSec": 13,
-            "endSec": null
-          }
+        "mainText": "\"상대는 주먹을 좋아하니까\n보자기를 내면 이긴다\"",
+        "mainFontSize": 78,
+        "subText": "하나로 단정 → 맞으면 이기고, 틀리면 진다",
+        "highlightWords": [
+          "감"
         ]
       },
       "transition": "slideUp",
       "backgroundColor": "#1a1a2e",
-      "accentColor": "#818cf8",
-      "audioDuration": 23.13
+      "accentColor": "#34d399",
+      "audioDuration": 14.77
     },
     {
       "id": 4,
       "type": "content",
-      "title": "",
-      "narration": "이 구조가 훨씬 더 선명하게 드러나는 게임이 있습니다. 바로 포커입니다. 포커 플레이어의 사고 수준은 가위 바위 보와 정확히 같은 구조로 나뉩니다.",
+      "title": "Level 2의 사고",
+      "narration": "레벨 이의 사고입니다. 상대는 주먹을 연속 세 번 냈다. 같은 걸 또 낼 확률은 낮다. 보자기나 가위 중 하나일 텐데, 그렇다면 가위를 내는 게 기대값이 높다. 상대의 선택을 하나로 단정짓지 않습니다. 가능한 선택지의 범위를 설정하고, 그 범위에 대해 가장 유리한 답을 고릅니다.",
       "keywords": [],
       "visual": "text-focus",
       "visualData": {
-        "mainText": "가위 바위 보 =  ?",
-        "revealText": "포커",
-        "revealDelaySec": 3,
-        "subText": "같은 구조, 더 선명한 차이",
+        "mainText": "\"주먹을 세 번 연속 냈다\n같은 걸 또 낼 확률은 낮다\"",
+        "mainFontSize": 78,
+        "subText": "선택지의 범위 → 기대값이 높은 답을 고른다",
         "highlightWords": [
-          "포커"
+          "범위",
+          "기대값"
         ]
       },
       "transition": "slideUp",
       "backgroundColor": "#0d1b2a",
-      "accentColor": "#a78bfa",
-      "audioDuration": 9.52
+      "accentColor": "#60a5fa",
+      "audioDuration": 20.67
     },
     {
       "id": 5,
       "type": "content",
-      "title": "포커의 세 가지 레벨",
-      "narration": "레벨 일은 나의 핸드 대 상대의 핸드입니다. 상대 패를 하나로 짐작하고 비교합니다. 레벨 이는 나의 핸드 대 상대의 레인지입니다. 상대가 가질 수 있는 패의 범위를 설정하고 기대값을 계산합니다. 전문용어로 익스플로잇 전략이라 부릅니다. 레벨 삼은 나의 레인지 대 상대의 레인지입니다. 상대의 전략을 역이용하는 고수의 영역입니다.",
+      "title": "Level 3의 사고",
+      "narration": "레벨 삼의 사고입니다. 내가 남자는 주먹이라고 말했으니, 상대는 내가 보자기를 낼 거라 읽을 것이다. 그래서 상대는 가위를 내려 할 것이다. 하지만 상대도 내가 여기까지 읽었을 거라 생각한다면... 읽기 위의 읽기가 끝없이 쌓입니다. 레벨 삼에서는 상대의 사고 과정 자체를 읽고, 그 위에서 게임을 설계합니다.",
       "keywords": [],
-      "visual": "process-flow",
+      "visual": "text-focus",
       "visualData": {
-        "steps": [
-          {
-            "text": "Level 1\n핸드 vs 핸드",
-            "color": "#34d399"
-          },
-          {
-            "text": "Level 2\n핸드 vs 레인지",
-            "color": "#60a5fa"
-          },
-          {
-            "text": "Level 3\n레인지 vs 레인지",
-            "color": "#f59e0b"
-          }
+        "mainText": "\"쟤도 날 읽었겠지…\n아니, 내가 그걸 읽은 걸 또 읽었나?\"",
+        "mainFontSize": 78,
+        "subText": "읽기 위의 읽기가 끝없이 쌓인다",
+        "highlightWords": [
+          "읽기 위의 읽기"
         ]
       },
       "transition": "slideUp",
       "backgroundColor": "#1e1e30",
       "accentColor": "#a78bfa",
-      "audioDuration": 26.75
+      "audioDuration": 22.85
     },
     {
       "id": 6,
+      "type": "content",
+      "title": "",
+      "narration": "가위바위보처럼 단순한 게임에서도 이 세 단계의 차이는 분명합니다. 그런데 이 구조가 훨씬 더 선명하게 드러나는 게임이 있습니다. 바로 포커입니다.",
+      "keywords": [],
+      "visual": "highlight",
+      "visualData": {
+        "text": "가위 바위 보 = 포커?",
+        "highlightColor": "#a78bfa",
+        "icons": ["🖐️\n✊✌️", "🃏"]
+      },
+      "transition": "scaleIn",
+      "backgroundColor": "#0f172a",
+      "accentColor": "#a78bfa",
+      "audioDuration": 9.94
+    },
+    {
+      "id": 7,
+      "type": "content",
+      "title": "포커 Level 1",
+      "narration": "포커에서 레벨 일은 나의 핸드 대 상대의 핸드입니다. 상대가 어떤 카드를 들고 있을지 하나로 짐작하고, 그것과 내 패를 비교합니다. 가위바위보에서 상대는 주먹을 낼 것이다라고 단정짓는 것과 같습니다. 대부분의 포커 플레이어가 이 레벨 일에 해당합니다.",
+      "keywords": [],
+      "visual": "text-focus",
+      "visualData": {
+        "mainText": "나의 핸드  vs  상대의 핸드",
+        "subText": "하나로 짐작하고 비교한다",
+        "highlightWords": [
+          "핸드"
+        ]
+      },
+      "transition": "slideUp",
+      "backgroundColor": "#1e293b",
+      "accentColor": "#34d399",
+      "audioDuration": 18.81
+    },
+    {
+      "id": 8,
+      "type": "content",
+      "title": "포커 Level 2",
+      "narration": "레벨 이는 나의 핸드 대 상대의 레인지입니다. 상대가 가질 수 있는 패의 범위를 설정하고, 기대값을 계산합니다. 전문용어로 익스플로잇 전략이라고 부릅니다. 상대의 습관과 경향성을 데이터로 파악하고, 약점을 체계적으로 공략합니다. 레벨 이만 되어도 일반인들 사이에서 꽤 안정적인 승률을 낼 수 있습니다.",
+      "keywords": [],
+      "visual": "text-focus",
+      "visualData": {
+        "mainText": "나의 핸드  vs  상대의 레인지",
+        "subText": "Exploit 전략: 약점을 체계적으로 공략",
+        "highlightWords": [
+          "레인지",
+          "Exploit"
+        ]
+      },
+      "transition": "slideUp",
+      "backgroundColor": "#1a1a2e",
+      "accentColor": "#60a5fa",
+      "audioDuration": 22.48
+    },
+    {
+      "id": 9,
+      "type": "content",
+      "title": "포커 Level 3: 고수의 영역",
+      "narration": "레벨 삼은 나의 레인지 대 상대의 레인지입니다. 고수의 영역입니다. 상대가 나를 어떻게 읽고 있는지를 파악하고, 그 읽기를 역이용합니다. 주도권을 쥐고 상대를 자신의 전략 안으로 끌어들여 수싸움을 벌입니다. 상대가 합리적으로 판단할수록 오히려 내 함정에 빠지도록 판을 짜는 것입니다.",
+      "keywords": [],
+      "visual": "text-focus",
+      "visualData": {
+        "mainText": "나의 레인지  vs  상대의 레인지",
+        "subText": "상대의 읽기를 역이용하여 함정을 짠다",
+        "highlightWords": [
+          "역이용",
+          "함정"
+        ]
+      },
+      "transition": "slideUp",
+      "backgroundColor": "#0d1b2a",
+      "accentColor": "#f59e0b",
+      "audioDuration": 20.67
+    },
+    {
+      "id": 10,
       "type": "content",
       "title": "레벨 간 격차는 잔인하다",
       "narration": "레벨 간의 격차는 잔인할 정도로 큽니다. 레벨 일이 레벨 이에게 유린당하고, 레벨 이가 레벨 삼에게 유린당합니다. 레벨 일과 레벨 삼의 대결은 초등학생과 대학생의 싸움이라고 할 정도입니다.",
@@ -149,15 +192,15 @@
         "unit": ""
       },
       "transition": "scaleIn",
-      "backgroundColor": "#1a1a2e",
+      "backgroundColor": "#1e1e30",
       "accentColor": "#ef4444",
-      "audioDuration": 14.21
+      "audioDuration": 13.05
     },
     {
-      "id": 7,
+      "id": 11,
       "type": "content",
-      "title": "낮은 레벨의 생존법",
-      "narration": "그렇다면 낮은 레벨의 플레이어는 무조건 당하고만 살아야 할까요? 아닙니다. 자신보다 높은 레벨의 상대와 싸우지 않으면 됩니다.",
+      "title": "낮은 Level의 플레이어가 살아남는 방법",
+      "narration": "그렇다면 낮은 레벨의 플레이어는 무조건 당하고만 살아야 할까요? 아닙니다. 자신보다 높은 레벨의 상대와 싸우지 않으면 됩니다. 원리는 간단하지만, 이걸 실천하려면 포커 실력과는 다른 종류의 능력이 필요합니다.",
       "keywords": [],
       "visual": "highlight",
       "visualData": {
@@ -167,13 +210,13 @@
       "transition": "slideUp",
       "backgroundColor": "#0f172a",
       "accentColor": "#3b82f6",
-      "audioDuration": 8.17
+      "audioDuration": 15.33
     },
     {
-      "id": 8,
+      "id": 12,
       "type": "content",
       "title": "생존에 필요한 두 가지 능력",
-      "narration": "이걸 실천하려면 두 가지 능력이 필요합니다. 첫째, 자신의 수준을 냉정히 평가할 수 있는 능력입니다. 내가 레벨 일인지 레벨 이인지를 정직하게 인정할 수 있어야 합니다. 둘째, 원칙을 만들고 지키는 냉정함입니다. 욕심 앞에서 원칙을 지키는 것이 가장 어렵습니다.",
+      "narration": "첫째, 자신의 수준을 냉정히 평가할 수 있는 능력입니다. 내가 레벨 일인지 레벨 이인지를 정직하게 인정할 수 있어야 합니다. 둘째, 원칙을 만들고 지키는 냉정함입니다. 원칙을 세우는 것보다 지키는 것이 훨씬 어렵고, 지키는 것보다 욕심 앞에서 지키는 것이 더 어렵습니다. 결국 포커에서의 생존은 실력만의 문제가 아닙니다. 게임 밖의 능력이 게임 안에서의 생존을 결정합니다.",
       "keywords": [],
       "visual": "checklist",
       "visualData": {
@@ -185,13 +228,13 @@
       "transition": "slideUp",
       "backgroundColor": "#1e293b",
       "accentColor": "#34d399",
-      "audioDuration": 19.23
+      "audioDuration": 28.0
     },
     {
-      "id": 9,
+      "id": 13,
       "type": "content",
-      "title": "포커와 투자는 본질적으로 같은 게임",
-      "narration": "포커와 투자는 본질적으로 같은 게임입니다. 불완전한 정보 속에서 확률을 계산하고, 리스크를 관리하며, 상대보다 더 나은 판단을 내려야 합니다. 다른 점이 있다면, 포커는 칩을 걸고 투자는 인생의 자산을 건다는 것 정도입니다.",
+      "title": "포커와 투자는 같은 게임",
+      "narration": "여기까지가 포커 이야기입니다. 그런데 이 구조를 투자, 특히 주식시장에 대입해보면 거의 그대로 들어맞습니다. 포커와 투자는 본질적으로 같은 게임입니다. 불완전한 정보 속에서 확률을 계산하고, 리스크를 관리하며, 상대보다 더 나은 판단을 내려야 합니다. 다른 점이 있다면, 포커는 칩을 걸고 투자는 인생의 자산을 건다는 것 정도입니다.",
       "keywords": [],
       "visual": "venn",
       "visualData": {
@@ -210,21 +253,21 @@
       "transition": "slideUp",
       "backgroundColor": "#0d1b2a",
       "accentColor": "#60a5fa",
-      "audioDuration": 17.23
+      "audioDuration": 24.29
     },
     {
-      "id": 10,
+      "id": 14,
       "type": "content",
       "title": "Level 1 투자자: 확신충",
-      "narration": "레벨 일의 투자자는 확신충입니다. 뉴스를 보고, 유튜브를 보고, 지인의 말을 듣습니다. 하지만 결국 이 종목은 오를 것이다라고 단정짓고 베팅합니다. 원칙이 없습니다. 떨어지면 불안해서 팔고, 오르면 더 오를 것 같아서 삽니다. 이들은 투자를 하고 있다고 믿지만, 실제로는 도박을 하고 있습니다.",
+      "narration": "레벨 일의 투자자는 확신충입니다. 뉴스를 보고, 유튜브를 보고, 지인의 말을 듣습니다. 하지만 결국 이 종목은 오를 것이다라고 단정짓고 베팅합니다. 원칙이 없습니다. 떨어지면 불안해서 팔고, 오르면 더 오를 것 같아서 삽니다. 오늘의 확신이 내일의 후회가 되고, 내일의 후회가 모레의 확신이 됩니다. 이들은 투자를 하고 있다고 믿지만, 실제로는 도박을 하고 있습니다.",
       "keywords": [],
       "visual": "before-after",
       "visualData": {
         "before": {
           "label": "투자라고 믿는 것",
           "items": [
-            "뉴스 보고 확신",
-            "감으로 베팅",
+            "뉴스·유튜브·지인 말",
+            "감으로 단정, 베팅",
             "원칙 없음"
           ]
         },
@@ -233,20 +276,20 @@
           "items": [
             "도박",
             "감정적 매매",
-            "손실 반복"
+            "확신 → 후회 반복"
           ]
         }
       },
       "transition": "slideUp",
       "backgroundColor": "#1a1a2e",
       "accentColor": "#ef4444",
-      "audioDuration": 22.48
+      "audioDuration": 26.24
     },
     {
-      "id": 11,
+      "id": 15,
       "type": "content",
       "title": "Level 2 투자자: 원칙이 있다",
-      "narration": "레벨 이의 투자자는 원칙을 가지고 있습니다. 재무제표를 읽거나, 차트를 분석하거나, 매크로 지표를 추적합니다. 근거가 있고, 목표 수익률을 설정하며, 손절과 익절 구간도 미리 정해둡니다. 레벨 일 투자자들이 공포에 팔 때 사고, 탐욕에 살 때 파는 식입니다.",
+      "narration": "레벨 이의 투자자는 원칙을 가지고 있습니다. 재무제표를 읽거나, 차트를 분석하거나, 매크로 지표를 추적합니다. 근거가 있고, 목표 수익률을 설정하며, 손절과 익절 구간도 미리 정해둡니다. 레벨 일 투자자들이 공포에 팔 때 사고, 탐욕에 살 때 팝니다. 원칙이 있기 때문에 레벨 일보다 훨씬 안정적인 수익을 낼 수 있습니다.",
       "keywords": [],
       "visual": "icon-grid",
       "visualData": {
@@ -272,13 +315,13 @@
       "transition": "slideUp",
       "backgroundColor": "#1e1e30",
       "accentColor": "#60a5fa",
-      "audioDuration": 18.99
+      "audioDuration": 24.06
     },
     {
-      "id": 12,
+      "id": 16,
       "type": "content",
       "title": "Level 3 투자자: 게임을 설계한다",
-      "narration": "레벨 삼의 투자자는 애초에 이길 수 있도록 게임을 설계합니다. 자신이 남들보다 탁월한 정보의 우위나 전문지식을 가진 영역을 먼저 정하고, 그 영역 안에서만 싸웁니다. 그리고 그 위에 헷지를 고려한 포트폴리오를 설계해서, 개별 판단이 틀리더라도 전체적으로는 살아남을 수 있는 구조를 만듭니다.",
+      "narration": "레벨 삼의 투자자는 애초에 이길 수 있도록 게임을 설계합니다. 자신이 남들보다 탁월한 정보의 우위나 전문지식을 가진 영역을 먼저 정하고, 그 영역 안에서만 싸웁니다. 그리고 헷지를 고려한 포트폴리오를 설계해서, 개별 판단이 틀리더라도 전체적으로는 살아남을 수 있는 구조를 만듭니다.",
       "keywords": [],
       "visual": "process-flow",
       "visualData": {
@@ -304,30 +347,31 @@
       "transition": "slideUp",
       "backgroundColor": "#0f172a",
       "accentColor": "#818cf8",
-      "audioDuration": 21.13
+      "audioDuration": 20.76
     },
     {
-      "id": 13,
+      "id": 17,
       "type": "content",
-      "title": "투자에서의 생존법",
-      "narration": "투자에서도 답은 같습니다. 자기 수준에 맞지 않는 싸움을 피하면 됩니다. 레벨 일이라면 가장 확실한 방법은 안 하는 것입니다. 그래도 하고 싶다면, 수익을 쫒는 대신 레벨을 높이기 위한 공부를 먼저 해야 합니다. 시장은 수업료를 매우 비싸게 받습니다.",
+      "title": "Level 1의 투자자는 어떻게 생존해야 하는가?",
+      "narration": "투자에서도 답은 같습니다. 자기 수준에 맞지 않는 싸움을 피하면 됩니다. 레벨 일이라면 가장 확실한 방법은 안 하는 것입니다. 그래도 하고 싶다면, 수익 대신 레벨을 높이기 위한 공부를 먼저 해야 합니다. 시장은 수업료를 매우 비싸게 받습니다.",
       "keywords": [],
       "visual": "alert",
       "visualData": {
         "icon": "⚠️",
-        "title": "Level 1의 생존법",
-        "message": "수익을 쫒기 전에\nLevel을 높이기 위한 공부가 먼저다"
+        "title": "",
+        "message": "가장 확실한 방법은 안 하는 것이다. 당장 수익을 쫒는 대신 Level을 높이기 위한 공부를 먼저 해야 한다."
       },
       "transition": "scaleIn",
       "backgroundColor": "#1e293b",
       "accentColor": "#f59e0b",
-      "audioDuration": 16.67
+      "audioDuration": 18.11
     },
     {
-      "id": 14,
+      "id": 18,
       "type": "content",
-      "title": "Level 2의 생존법: 쉬운 투자",
-      "narration": "레벨 이의 투자자는 쉬운 투자를 하면 됩니다. 워렌 버핏이 추천한 미국 에스앤피 오백 인덱스 펀드와 국채 투자가 대표적입니다. 혹은 자신이 일하고 있는 분야에서 남들보다 잘 아는 영역의 기회를 발굴하여 장기로 분할 투자하는 방법도 있습니다.",
+      "title": "Level 2의 투자자는 어떻게 해야 하는가?",
+      "subtitle": "쉬운 투자를 하면 된다",
+      "narration": "레벨 이의 투자자는 쉬운 투자를 하면 됩니다. 워렌 버핏이 추천한 미국 에스앤피 오백 인덱스 펀드와 국채 투자가 대표적입니다. 혹은 자신이 일하고 있는 분야에서 남들보다 잘 아는 영역의 기회를 발굴하여 장기로 분할 투자하는 방법도 있습니다. 자신의 레벨에 맞는 테이블에 앉는 것, 그것이 레벨 이 투자자의 생존법입니다.",
       "keywords": [],
       "visual": "feature-cards",
       "visualData": {
@@ -352,13 +396,13 @@
       "transition": "slideUp",
       "backgroundColor": "#1a1a2e",
       "accentColor": "#34d399",
-      "audioDuration": 18.67
+      "audioDuration": 26.1
     },
     {
-      "id": 15,
+      "id": 19,
       "type": "content",
-      "title": "Level 3의 끝판왕: 혁신 기업가",
-      "narration": "투자에서 레벨 삼의 끝판왕은 새로운 시장을 발견하고 창출해내는 혁신 기업가들이라고 생각합니다. 기존의 게임에 참여하는 것이 아니라, 아예 새로운 게임을 만듭니다. 우리 같은 보통 사람은 직접 끝판왕이 되지 못하더라도, 끝판왕을 알아보는 눈을 기르면 됩니다.",
+      "title": "Level 3의 끝판왕은 누구인가?",
+      "narration": "투자에서 레벨 삼의 끝판왕은 새로운 시장을 발견하고 창출해내는 혁신 기업가들이라고 생각합니다. 기존의 게임에 참여하는 것이 아니라, 아예 새로운 게임을 만듭니다. 우리 같은 보통 사람은 직접 끝판왕이 되지 못하더라도, 끝판왕을 알아보는 눈을 기르면 됩니다. 그들의 회사에 투자하거나 그 밑에서 일하는 것만으로도 레벨 삼의 과실을 나눠 가질 수 있습니다.",
       "keywords": [],
       "visual": "hierarchy",
       "visualData": {
@@ -378,13 +422,13 @@
       "transition": "slideUp",
       "backgroundColor": "#0d1b2a",
       "accentColor": "#f59e0b",
-      "audioDuration": 19.04
+      "audioDuration": 27.45
     },
     {
-      "id": 16,
+      "id": 20,
       "type": "content",
-      "title": "관통하는 하나의 원리",
-      "narration": "가위 바위 보에서 시작한 이야기가 포커를 거쳐 투자까지 왔습니다. 게임의 종류는 달라도 관통하는 원리는 하나입니다. 자신이 어디에 서 있는지를 아는 것. 내 수준을 알면 피해야 할 싸움이 보이고, 피해야 할 싸움이 보이면 생존할 수 있습니다. 그리고 생존해야 비로소 다음 레벨로 올라갈 기회가 옵니다.",
+      "title": "관통하는 원리는 하나다",
+      "narration": "가위바위보에서 시작한 이야기가 포커를 거쳐 투자까지 왔습니다. 게임의 종류는 달라도 관통하는 원리는 하나입니다. 자신이 어디에 서 있는지를 아는 것. 내 수준을 알면 피해야 할 싸움이 보이고, 피해야 할 싸움이 보이면 생존할 수 있습니다. 그리고 생존해야 비로소 다음 레벨로 올라갈 기회가 옵니다.",
       "keywords": [],
       "visual": "highlight",
       "visualData": {
@@ -394,19 +438,19 @@
       "transition": "scaleIn",
       "backgroundColor": "#0f172a",
       "accentColor": "#3b82f6",
-      "audioDuration": 20.9
+      "audioDuration": 23.92
     },
     {
       "id": 99,
       "type": "outro",
       "title": "감사합니다",
-      "narration": "지금까지 가위 바위 보, 포커, 투자, 그리고 의사결정의 레벨에 대해 이야기했습니다. 다음 프레임워크도 기대해주세요. 감사합니다.",
+      "narration": "여러분은 현재 몇 레벨에 계신지, 어떤 생존전략이 있는지 댓글로 알려주세요. 감사합니다.",
       "keywords": [],
       "visual": "none",
       "transition": "fadeIn",
       "backgroundColor": "#0f172a",
       "accentColor": "#3b82f6",
-      "audioDuration": 10.03
+      "audioDuration": 7.32
     }
   ]
 }

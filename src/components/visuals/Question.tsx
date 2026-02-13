@@ -31,7 +31,7 @@ export const Question: React.FC<QuestionProps> = ({ visualData, accentColor }) =
   const lines = visualData.question.split("\n");
 
   // subLabel fade in
-  const subLabelDelay = Math.round(5 * fps);
+  const subLabelDelay = Math.round(4.5 * fps);
   const subLabelOpacity = interpolate(frame, [subLabelDelay, subLabelDelay + fps * 0.5], [0, 1], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
@@ -57,70 +57,18 @@ export const Question: React.FC<QuestionProps> = ({ visualData, accentColor }) =
         gap: 30,
       }}
     >
-      {/* Icon + subLabel group */}
-      <div style={{ position: "relative", display: "flex", flexDirection: "column", alignItems: "center", gap: 14 }}>
-        <div
-          style={{
-            fontSize: 140,
-            fontWeight: 800,
-            color: accentColor,
-            transform: `scale(${iconScale})`,
-            fontFamily,
-            lineHeight: 1,
-          }}
-        >
-          {visualData.icon || "?"}
-        </div>
-
-        {visualData.subLabel && (
-          <div style={{ position: "relative", display: "inline-block" }}>
-            <div
-              style={{
-                fontFamily,
-                fontSize: 44,
-                fontWeight: 700,
-                color: "rgba(255,255,255,0.9)",
-                textAlign: "center",
-                opacity: subLabelOpacity,
-              }}
-            >
-              {visualData.subLabel}
-            </div>
-
-            {/* Red X */}
-            {crossProgress > 0 && (
-              <svg
-                viewBox="0 0 200 60"
-                style={{
-                  position: "absolute",
-                  top: "50%",
-                  left: "50%",
-                  width: "120%",
-                  height: "120%",
-                  transform: "translate(-50%, -50%)",
-                  opacity: crossProgress,
-                }}
-              >
-                <line
-                  x1="10" y1="8"
-                  x2={interpolate(crossProgress, [0, 1], [10, 190])}
-                  y2={interpolate(crossProgress, [0, 1], [8, 52])}
-                  stroke="#ef4444"
-                  strokeWidth="6"
-                  strokeLinecap="round"
-                />
-                <line
-                  x1="190" y1="8"
-                  x2={interpolate(crossProgress, [0, 1], [190, 10])}
-                  y2={interpolate(crossProgress, [0, 1], [8, 52])}
-                  stroke="#ef4444"
-                  strokeWidth="6"
-                  strokeLinecap="round"
-                />
-              </svg>
-            )}
-          </div>
-        )}
+      {/* Icon */}
+      <div
+        style={{
+          fontSize: 140,
+          fontWeight: 800,
+          color: accentColor,
+          transform: `scale(${iconScale})`,
+          fontFamily,
+          lineHeight: 1,
+        }}
+      >
+        {visualData.icon || "?"}
       </div>
 
       {lines.map((line, i) => {
@@ -136,7 +84,7 @@ export const Question: React.FC<QuestionProps> = ({ visualData, accentColor }) =
             key={i}
             style={{
               fontFamily,
-              fontSize: 52,
+              fontSize: 64,
               fontWeight: 700,
               color: "#ffffff",
               textAlign: "center",
@@ -158,6 +106,56 @@ export const Question: React.FC<QuestionProps> = ({ visualData, accentColor }) =
           </div>
         );
       })}
+
+      {visualData.subLabel && (
+        <div style={{ position: "relative", display: "inline-block" }}>
+          <div
+            style={{
+              fontFamily,
+              fontSize: 54,
+              fontWeight: 700,
+              color: "rgba(255,255,255,0.9)",
+              textAlign: "center",
+              opacity: subLabelOpacity,
+            }}
+          >
+            {visualData.subLabel}
+          </div>
+
+          {/* Red X */}
+          {crossProgress > 0 && (
+            <svg
+              viewBox="0 0 200 60"
+              style={{
+                position: "absolute",
+                top: "50%",
+                left: "50%",
+                width: "120%",
+                height: "120%",
+                transform: "translate(-50%, -50%)",
+                opacity: crossProgress,
+              }}
+            >
+              <line
+                x1="10" y1="8"
+                x2={interpolate(crossProgress, [0, 1], [10, 190])}
+                y2={interpolate(crossProgress, [0, 1], [8, 52])}
+                stroke="#ef4444"
+                strokeWidth="6"
+                strokeLinecap="round"
+              />
+              <line
+                x1="190" y1="8"
+                x2={interpolate(crossProgress, [0, 1], [190, 10])}
+                y2={interpolate(crossProgress, [0, 1], [8, 52])}
+                stroke="#ef4444"
+                strokeWidth="6"
+                strokeLinecap="round"
+              />
+            </svg>
+          )}
+        </div>
+      )}
     </div>
   );
 };

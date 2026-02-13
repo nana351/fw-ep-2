@@ -70,8 +70,9 @@ export const IntroScene: React.FC<IntroSceneProps> = ({ scene }) => {
             <div key={i} style={{ marginBottom: i < titleLines.length - 1 ? 10 : 0 }}>
               <StaggeredTitle
                 text={line}
-                fontSize={78}
+                fontSize={90}
                 delay={i * 15}
+                align="center"
               />
             </div>
           ))}
@@ -92,7 +93,7 @@ export const IntroScene: React.FC<IntroSceneProps> = ({ scene }) => {
           <div
             style={{
               fontFamily,
-              fontSize: 36,
+              fontSize: 44,
               fontWeight: 400,
               color: `${scene.accentColor}cc`,
               transform: `translateY(${subtitleY}px)`,

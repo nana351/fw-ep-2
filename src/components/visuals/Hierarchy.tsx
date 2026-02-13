@@ -114,7 +114,7 @@ export const Hierarchy: React.FC<HierarchyProps> = ({ visualData, accentColor })
             <div
               style={{
                 fontFamily,
-                fontSize: 34,
+                fontSize: 42,
                 fontWeight: 800,
                 color: level.color,
                 whiteSpace: "nowrap",
@@ -126,7 +126,7 @@ export const Hierarchy: React.FC<HierarchyProps> = ({ visualData, accentColor })
             <div
               style={{
                 fontFamily,
-                fontSize: 28,
+                fontSize: 34,
                 fontWeight: 400,
                 color: "rgba(255,255,255,0.8)",
                 lineHeight: 1.4,

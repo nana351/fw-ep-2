@@ -53,9 +53,9 @@ export const FeatureCards: React.FC<FeatureCardsProps> = ({
           <div
             key={i}
             style={{
-              width: 300,
-              minHeight: 240,
-              padding: "36px 28px",
+              width: 360,
+              minHeight: 300,
+              padding: "44px 36px",
               borderRadius: 20,
               backgroundColor: `${itemColor}12`,
               border: `2px solid ${itemColor}35`,
@@ -78,7 +78,7 @@ export const FeatureCards: React.FC<FeatureCardsProps> = ({
                 alignItems: "center",
                 justifyContent: "center",
                 fontFamily,
-                fontSize: 30,
+                fontSize: 36,
                 fontWeight: 800,
                 color: itemColor,
               }}
@@ -88,7 +88,7 @@ export const FeatureCards: React.FC<FeatureCardsProps> = ({
             <div
               style={{
                 fontFamily,
-                fontSize: 34,
+                fontSize: 42,
                 fontWeight: 700,
                 color: "#ffffff",
               }}
@@ -98,7 +98,7 @@ export const FeatureCards: React.FC<FeatureCardsProps> = ({
             <div
               style={{
                 fontFamily,
-                fontSize: 26,
+                fontSize: 32,
                 fontWeight: 400,
                 color: "rgba(255,255,255,0.65)",
                 lineHeight: 1.4,

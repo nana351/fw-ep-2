@@ -77,7 +77,7 @@ export const Venn: React.FC<VennProps> = ({ visualData, accentColor }) => {
         <div
           style={{
             fontFamily,
-            fontSize: 42,
+            fontSize: 52,
             fontWeight: 700,
             color: circles[0].color,
           }}
@@ -105,7 +105,7 @@ export const Venn: React.FC<VennProps> = ({ visualData, accentColor }) => {
         <div
           style={{
             fontFamily,
-            fontSize: 42,
+            fontSize: 52,
             fontWeight: 700,
             color: circles[1].color,
           }}
@@ -127,14 +127,14 @@ export const Venn: React.FC<VennProps> = ({ visualData, accentColor }) => {
         <div
           style={{
             fontFamily,
-            fontSize: 28,
+            fontSize: 26,
             fontWeight: 700,
             color: "#ffffff",
-            padding: "16px 32px",
+            padding: "12px 24px",
             borderRadius: 12,
             backgroundColor: `${accentColor}30`,
             backdropFilter: "blur(8px)",
-            lineHeight: 1.4,
+            lineHeight: 1.3,
           }}
         >
           {visualData.intersection.split("\n").map((line: string, i: number) => (

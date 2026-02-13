@@ -62,7 +62,7 @@ export const Alert: React.FC<AlertProps> = ({ visualData, accentColor }) => {
       {/* Icon with shake */}
       <div
         style={{
-          fontSize: 80,
+          fontSize: 96,
           transform: `translateX(${shakeX}px)`,
           marginBottom: 24,
         }}
@@ -73,9 +73,9 @@ export const Alert: React.FC<AlertProps> = ({ visualData, accentColor }) => {
       {/* Alert box */}
       <div
         style={{
-          maxWidth: 650,
+          maxWidth: 900,
           width: "100%",
-          padding: "36px 44px",
+          padding: "48px 60px",
           borderRadius: 20,
           backgroundColor: `${accentColor}15`,
           border: `2px solid ${accentColor}50`,
@@ -91,7 +91,7 @@ export const Alert: React.FC<AlertProps> = ({ visualData, accentColor }) => {
         <div
           style={{
             fontFamily,
-            fontSize: 30,
+            fontSize: 38,
             fontWeight: 800,
             color: accentColor,
           }}
@@ -111,7 +111,7 @@ export const Alert: React.FC<AlertProps> = ({ visualData, accentColor }) => {
               key={i}
               style={{
                 fontFamily,
-                fontSize: 26,
+                fontSize: 32,
                 fontWeight: 500,
                 color: "rgba(255,255,255,0.85)",
                 lineHeight: 1.5,

@@ -74,23 +74,22 @@ export const Checklist: React.FC<ChecklistProps> = ({ visualData, accentColor })
                 flexShrink: 0,
               }}
             >
-              <svg width="24" height="24" viewBox="0 0 24 24">
-                <path
-                  d="M4 12l6 6L20 6"
-                  stroke={accentColor}
-                  strokeWidth="3"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeDasharray="24"
-                  strokeDashoffset={24 - pathLength}
-                />
-              </svg>
+              <span
+                style={{
+                  fontFamily,
+                  fontSize: 34,
+                  fontWeight: 800,
+                  color: accentColor,
+                  opacity: checkProgress,
+                }}
+              >
+                {i + 1}
+              </span>
             </div>
             <div
               style={{
                 fontFamily,
-                fontSize: 40,
+                fontSize: 48,
                 fontWeight: 600,
                 color: "rgba(255,255,255,0.9)",
                 lineHeight: 1.4,

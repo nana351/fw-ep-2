@@ -17,7 +17,7 @@ interface StaggeredTitleProps {
 
 export const StaggeredTitle: React.FC<StaggeredTitleProps> = ({
   text,
-  fontSize = 60,
+  fontSize = 72,
   color = "#ffffff",
   delay = 0,
   align = "flex-start",
@@ -79,7 +79,7 @@ interface FadeUpTextProps {
 
 export const FadeUpText: React.FC<FadeUpTextProps> = ({
   text,
-  fontSize = 40,
+  fontSize = 48,
   color = "rgba(255,255,255,0.85)",
   delay = 0,
   lineHeight = 1.6,
@@ -143,7 +143,7 @@ export const KeywordBadge: React.FC<KeywordBadgeProps> = ({
         backgroundColor: "transparent",
         border: `1px solid ${accentColor}60`,
         color: accentColor,
-        fontSize: 16,
+        fontSize: 20,
         fontWeight: 600,
         fontFamily,
         transform: `scale(${scale})`,

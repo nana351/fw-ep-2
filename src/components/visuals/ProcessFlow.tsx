@@ -77,7 +77,7 @@ export const ProcessFlow: React.FC<ProcessFlowProps> = ({ visualData, accentColo
               <div
                 style={{
                   fontFamily,
-                  fontSize: 30,
+                  fontSize: 38,
                   fontWeight: 800,
                   color: stepColor,
                   marginBottom: lines.length > 1 ? 8 : 0,
@@ -89,7 +89,7 @@ export const ProcessFlow: React.FC<ProcessFlowProps> = ({ visualData, accentColo
                 <div
                   style={{
                     fontFamily,
-                    fontSize: 24,
+                    fontSize: 30,
                     fontWeight: 400,
                     color: "rgba(255,255,255,0.7)",
                     lineHeight: 1.3,

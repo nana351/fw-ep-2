@@ -132,7 +132,7 @@ function LayoutA({ scene, fps }: { scene: Scene; fps: number }) {
         <Sequence from={5}>
           <StaggeredTitle
             text={scene.title}
-            fontSize={46}
+            fontSize={56}
             delay={0}
           />
         </Sequence>
@@ -176,7 +176,7 @@ function LayoutA({ scene, fps }: { scene: Scene; fps: number }) {
   );
 }
 
-function FadeInTitle({ title, accentColor }: { title: string; accentColor: string }) {
+function FadeInTitle({ title, subtitle, accentColor }: { title: string; subtitle?: string; accentColor: string }) {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const opacity = interpolate(frame, [10, 10 + fps * 1.2], [0, 1], {
@@ -195,17 +195,19 @@ function FadeInTitle({ title, accentColor }: { title: string; accentColor: strin
         right: 0,
         height: "24%",
         display: "flex",
-        alignItems: "flex-end",
-        justifyContent: "center",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "flex-end",
         padding: "0 100px 10px 100px",
         opacity,
         transform: `translateY(${translateY}px)`,
+        gap: 6,
       }}
     >
       <div
         style={{
           fontFamily,
-          fontSize: 47,
+          fontSize: 58,
           fontWeight: 700,
           color: "white",
           textAlign: "center",
@@ -215,6 +217,21 @@ function FadeInTitle({ title, accentColor }: { title: string; accentColor: strin
       >
         {title}
       </div>
+      {subtitle && (
+        <div
+          style={{
+            fontFamily,
+            fontSize: 44,
+            fontWeight: 500,
+            color: accentColor,
+            textAlign: "center",
+            opacity: 0.85,
+            marginTop: 8,
+          }}
+        >
+          {subtitle}
+        </div>
+      )}
     </div>
   );
 }
@@ -224,7 +241,7 @@ function LayoutB({ scene, fps }: { scene: Scene; fps: number }) {
     <AbsoluteFill>
       {/* Top title bar - centered fade in */}
       {scene.title && (
-        <FadeInTitle title={scene.title} accentColor={scene.accentColor} />
+        <FadeInTitle title={scene.title} subtitle={(scene as any).subtitle} accentColor={scene.accentColor} />
       )}
 
       {/* Center visual */}

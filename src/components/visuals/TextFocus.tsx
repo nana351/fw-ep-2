@@ -14,6 +14,7 @@ interface TextFocusProps {
     highlightWords?: string[];
     revealText?: string;
     revealDelaySec?: number;
+    mainFontSize?: number;
   };
   accentColor: string;
 }
@@ -82,7 +83,7 @@ export const TextFocus: React.FC<TextFocusProps> = ({ visualData, accentColor })
       <div
         style={{
           fontFamily,
-          fontSize: 110,
+          fontSize: visualData.mainFontSize ?? 130,
           fontWeight: 800,
           color: accentColor,
           transform: `scale(${mainScale})`,
@@ -132,7 +133,7 @@ export const TextFocus: React.FC<TextFocusProps> = ({ visualData, accentColor })
       <div
         style={{
           fontFamily,
-          fontSize: 36,
+          fontSize: 44,
           fontWeight: 400,
           color: "rgba(255,255,255,0.7)",
           transform: `translateY(${subY}px)`,

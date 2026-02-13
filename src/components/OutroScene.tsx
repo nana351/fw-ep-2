@@ -74,7 +74,7 @@ export const OutroScene: React.FC<OutroSceneProps> = ({ scene }) => {
         <div
           style={{
             fontFamily,
-            fontSize: 90,
+            fontSize: 110,
             fontWeight: 800,
             color: "#ffffff",
             transform: `scale(${titleScale})`,

@@ -68,7 +68,7 @@ export const BeforeAfter: React.FC<BeforeAfterProps> = ({
       <div
         style={{
           fontFamily,
-          fontSize: 26,
+          fontSize: 34,
           fontWeight: 800,
           color,
           textAlign: "center",
@@ -91,7 +91,7 @@ export const BeforeAfter: React.FC<BeforeAfterProps> = ({
             key={i}
             style={{
               fontFamily,
-              fontSize: 22,
+              fontSize: 28,
               fontWeight: 500,
               color: "rgba(255,255,255,0.85)",
               padding: "12px 16px",
