@@ -25,7 +25,9 @@ export const SceneLayout: React.FC<SceneLayoutProps> = ({
   const frame = useCurrentFrame();
   const { durationInFrames } = useVideoConfig();
 
-  const progress = interpolate(frame, [0, durationInFrames], [0, 100], {
+  const safeDuration = Math.max(durationInFrames, 1);
+  const progress = interpolate(frame, [0, safeDuration], [0, 100], {
+    extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
 

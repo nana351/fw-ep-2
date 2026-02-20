@@ -25,6 +25,8 @@ import { BeforeAfter } from "./visuals/BeforeAfter";
 import { IconGrid } from "./visuals/IconGrid";
 import { Alert } from "./visuals/Alert";
 import { FeatureCards } from "./visuals/FeatureCards";
+import { ImageFeature } from "./visuals/ImageFeature";
+import { VideoPlayer } from "./visuals/VideoPlayer";
 
 interface ContentSceneProps {
   scene: Scene;
@@ -45,6 +47,8 @@ const LAYOUT_B_VISUALS = [
   "checklist",
   "icon-grid",
   "feature-cards",
+  "image-feature",
+  "video-player",
 ];
 
 function VisualRenderer({
@@ -81,6 +85,10 @@ function VisualRenderer({
       return <Alert visualData={visualData} accentColor={accentColor} />;
     case "feature-cards":
       return <FeatureCards visualData={visualData} accentColor={accentColor} />;
+    case "image-feature":
+      return <ImageFeature visualData={visualData} accentColor={accentColor} />;
+    case "video-player":
+      return <VideoPlayer visualData={visualData} accentColor={accentColor} />;
     default:
       return null;
   }

@@ -52,7 +52,7 @@ export const OutroScene: React.FC<OutroSceneProps> = ({ scene }) => {
         }}
       >
         <Img
-          src={staticFile("jake.png")}
+          src={staticFile("img/jake.png")}
           style={{
             width: 260,
             height: 260,

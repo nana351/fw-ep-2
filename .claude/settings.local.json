@@ -17,7 +17,19 @@
       "Bash(winget install:*)",
       "Bash(\"C:/Program Files/GitHub CLI/gh.exe\" auth status)",
       "Bash(git init:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(gh auth:*)",
+      "Bash(\"C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe\" auth status)",
+      "Bash(\"C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe\" repo create fw-ep-2 --public --source=. --remote=origin --push)",
+      "Bash(\"C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe\" api users/starlight-dot --jq \".login, .name\")",
+      "Bash(\"C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe\" api repos/nana351/fw-ep-2/collaborators/starlight-dot -X PUT -f permission=push)",
+      "Bash(git push:*)",
+      "Bash(\"C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe\" auth setup-git)",
+      "Bash(git -C \"C:\\\\project\\\\fw-ep-2-main\" status)",
+      "Bash(git -C \"C:\\\\project\\\\fw-ep-2-main\" diff --stat)",
+      "Bash(git -C \"C:\\\\project\\\\fw-ep-2-main\" log --oneline -5)",
+      "Bash(git -C \"C:\\\\project\\\\fw-ep-2-main\" add .claude/settings.local.json public/audio/ public/img/ public/video/ src/MainComposition.tsx src/Root.tsx src/components/ContentScene.tsx src/components/OutroScene.tsx src/components/SceneLayout.tsx src/components/visuals/Alert.tsx src/components/visuals/Checklist.tsx src/components/visuals/ImageFeature.tsx src/components/visuals/VideoPlayer.tsx src/components/OpeningScene.tsx src/data/scenes.json)"
     ]
   }
 }

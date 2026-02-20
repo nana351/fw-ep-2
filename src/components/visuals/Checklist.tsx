@@ -10,6 +10,7 @@ import { fontFamily } from "../../Root";
 interface ChecklistProps {
   visualData: {
     items: string[];
+    itemDelays?: number[];
   };
   accentColor: string;
 }
@@ -32,7 +33,7 @@ export const Checklist: React.FC<ChecklistProps> = ({ visualData, accentColor })
       }}
     >
       {visualData.items.map((item, i) => {
-        const delay = 15 + i * 15;
+        const delay = visualData.itemDelays?.[i] ?? (15 + i * 15);
         const slideProgress = spring({
           frame: frame - delay,
           fps,

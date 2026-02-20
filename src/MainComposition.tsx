@@ -4,6 +4,7 @@ import { TransitionSeries, linearTiming } from "@remotion/transitions";
 import { fade } from "@remotion/transitions/fade";
 import { slide } from "@remotion/transitions/slide";
 import { wipe } from "@remotion/transitions/wipe";
+import { OpeningScene } from "./components/OpeningScene";
 import { IntroScene } from "./components/IntroScene";
 import { ContentScene } from "./components/ContentScene";
 import { OutroScene } from "./components/OutroScene";
@@ -32,6 +33,9 @@ function renderScene(scene: Scene, totalScenes: number) {
     ? totalScenes
     : scene.id;
 
+  if (scene.type === "opening") {
+    return <OpeningScene scene={scene} />;
+  }
   if (scene.type === "intro") {
     return <IntroScene scene={scene} />;
   }
@@ -49,16 +53,17 @@ function renderScene(scene: Scene, totalScenes: number) {
 
 export const MainComposition: React.FC<CompositionProps> = ({ scenes }) => {
   const { fps } = useVideoConfig();
+  const contentSceneCount = scenes.filter(s => s.type !== "opening").length;
 
   return (
     <TransitionSeries>
       {scenes.map((scene, i) => {
-        const duration = Math.ceil(((scene.audioDuration || 4) + 0.3) * fps / 1.1);
+        const duration = Math.ceil(((scene.audioDuration || 4) + 0.6) * fps / 1.1);
 
         return (
           <React.Fragment key={scene.id}>
             <TransitionSeries.Sequence durationInFrames={duration}>
-              {renderScene(scene, scenes.length)}
+              {renderScene(scene, contentSceneCount)}
             </TransitionSeries.Sequence>
             {i < scenes.length - 1 && (
               <TransitionSeries.Transition

@@ -73,9 +73,9 @@ export const Alert: React.FC<AlertProps> = ({ visualData, accentColor }) => {
       {/* Alert box */}
       <div
         style={{
-          maxWidth: 900,
+          maxWidth: 1400,
           width: "100%",
-          padding: "48px 60px",
+          padding: "48px 80px",
           borderRadius: 20,
           backgroundColor: `${accentColor}15`,
           border: `2px solid ${accentColor}50`,

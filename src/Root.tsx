@@ -19,7 +19,7 @@ export const RemotionRoot: React.FC = () => {
   const scenes = scenesData.scenes;
 
   const totalFrames = scenes.reduce((acc, scene) => {
-    const duration = Math.ceil(((scene.audioDuration || 4) + 0.3) * FPS / 1.1);
+    const duration = Math.ceil(((scene.audioDuration || 4) + 0.6) * FPS / 1.1);
     return acc + duration;
   }, 0) - (scenes.length - 1) * TRANSITION_FRAMES;
 
